@@ -1,0 +1,169 @@
+.header {
+    position: fixed;
+    z-index: 9999; /* Đảm bảo header hiển thị trên tất cả các phần tử khác trên trang */
+}
+
+/* Tùy chỉnh kích thước logo để nó hiển thị đúng trên header cố định */
+.logo img {
+    max-width: 100%; /* Đảm bảo hình ảnh logo không vượt quá chiều rộng của header */
+}
+
+/* Tùy chỉnh các style khác cho header, ví dụ: */
+.navbar-nav .nav-item .nav-link {
+    color: #000; /* Chỉnh màu chữ cho các mục trong menu */
+    font-weight: bold; /* Chỉnh độ đậm cho chữ */
+    padding: 0.5rem 1rem; /* Tùy chỉnh khoảng cách giữa các mục trong menu */
+}
+
+/* Style cho active link */
+.navbar-nav .nav-item.active .nav-link {
+    color: #236D89; /* Chỉnh màu chữ cho mục active trong menu */
+}
+
+/* Bg main color */
+.bg-main-color {
+	background-color: #236D89;
+}
+
+/* Main color */
+.main-color {
+	color: #236D89;
+}
+
+.yellow-color {
+	color: #F7B659;
+}
+
+.p-color {
+	color: #5D5D5D;
+}
+
+/* Feature */
+/* Style for Featured Services Section */
+.featured-services {
+  background-color: #f7f7f7; /* Background color */
+  padding: 60px 0px; /* Padding top and bottom */
+  flex-wrap: wrap;
+}
+
+.featured-services .icon-box {
+  background-color: #fff; /* Background color for icon box */
+  padding: 30px; /* Padding inside icon box */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: all 0.3s ease-in-out; /* Transition effect */
+  display: block;
+}
+
+.featured-services .icon-box:hover {
+  transform: translateY(-5px); /* Move icon box up on hover */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.featured-services .icon-box .icon {
+  font-size: 48px; /* Icon size */
+  margin-bottom: 15px; /* Margin bottom */
+  color: #4b7bec; /* Icon color */
+}
+
+.featured-services .icon-box .title {
+  font-size: 24px; /* Title font size */
+  font-weight: 700; /* Title font weight */
+  color: #333; /* Title color */
+  margin-bottom: 15px; /* Margin bottom */
+}
+
+.featured-services .icon-box .description {
+  font-size: 16px; /* Description font size */
+  color: #777; /* Description color */
+}
+
+
+/* Feature */
+/* Style for Featured Services Section */
+.featured-services-2 {
+  padding: 20px 0px 50px; /* Padding top and bottom */
+}
+
+.featured-services-2 .icon-box {
+  background-color: #fff; /* Background color for icon box */
+  padding: 30px; /* Padding inside icon box */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: all 0.3s ease-in-out; /* Transition effect */
+}
+
+.featured-services-2 .icon-box:hover {
+  transform: translateY(-5px); /* Move icon box up on hover */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.featured-services-2 .icon-box .icon {
+  font-size: 48px; /* Icon size */
+  margin-bottom: 15px; /* Margin bottom */
+  color: #4b7bec; /* Icon color */
+}
+
+.featured-services-2 .icon-box .title {
+  font-size: 24px; /* Title font size */
+  font-weight: 700; /* Title font weight */
+  color: #333; /* Title color */
+  margin-bottom: 15px; /* Margin bottom */
+}
+
+.featured-services-2 .icon-box .description {
+  font-size: 16px; /* Description font size */
+  color: #777; /* Description color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .featured-services-2 .icon-box {
+    margin-bottom: 30px; /* Margin bottom for responsiveness */
+  }
+}
+
+@media (max-width: 768px) {
+
+	/* Styles for mobile devices */
+	.header {
+		padding-top: 20px;
+		/* Add top padding to the header */
+		background-color: #fff;
+		/* Add white background */
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+		/* Add box shadow */
+	}
+
+	.section-padding {
+		padding-top: 90px;
+		/* Add padding-top to push the section down */
+	}
+}
+
+/* line hover */
+.nav-link {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	/* Đặt ở giữa */
+	transform: translateX(-50%) scaleX(0);
+	/* Bắt đầu từ độ rộng 0 */
+	width: 100%;
+	/* Độ rộng tối đa */
+	height: 2px;
+	background-color: #03cafc;
+	transition: transform 0.3s ease;
+	/* Hiệu ứng chuyển đổi */
+}
+
+.nav-link:hover::after {
+	transform: translateX(-50%) scaleX(0.5);
+	/* Scale dòng từ giữa ra */
+}
+
